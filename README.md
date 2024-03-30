@@ -1,12 +1,12 @@
 # Portainer Docker Compose
 
-Portainer is a tool that simplifies the management and maintenance of Docker’s containers. A simple setup to deploy Portainer using `docker-compose`.
+Portainer is a tool that simplifies the management and maintenance of Docker’s containers. A simple setup to deploy Portainer using `docker compose`.
 
 [Portainer Source](https://github.com/portainer/portainer)
 
 ## Requirements
 - Install [Docker](https://docker.io/)
-- Install [Docker-compose](https://docs.docker.com/compose/install/)
+- Install [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Clone this repository
 
@@ -19,7 +19,7 @@ cd portainer-docker
 
 ## Copy .env.example to .env
 
-```
+```bash
 cp .env.example .env
 ```
 
@@ -29,7 +29,7 @@ Change **APP_NAME** and **APP_PORT** accordingly
 
 Or using default values:
 
-```
+```dotenv
 APP_NAME=portainer
 APP_PORT=9001
 ```
@@ -39,7 +39,7 @@ APP_PORT=9001
 Run:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Check the network ID
